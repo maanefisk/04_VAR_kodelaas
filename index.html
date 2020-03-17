@@ -6,7 +6,7 @@
     
 <body>
 
-
+<div class="nummerboks"> </div>
     <div>
 <button onclick="choose(this)" id="one" onmouseover="changecolor(this)" onmouseout="changeback(this)">1</button>
 <button onclick="choose(this)" id="two" onmouseover="changecolor(this)" onmouseout="changeback(this)">2</button>
@@ -30,7 +30,7 @@ function changeback(tilrosaigjen) {
     tilrosaigjen.style.background = "rgb(255, 104, 142)";
 }
 function choose(valgt) {
-    var myObj = { valgt };
+    var myObj = valgt.innerHTML ;  
 console.log(myObj);
 }
 
