@@ -1,0 +1,12 @@
+div {
+    font-size: 0px;
+}
+
+button {
+    font-size: 30px;
+    background-color: rgb(255, 104, 142);
+    border: none;
+    color: rgb(255, 185, 206);
+    padding: 34px 40px;
+    border: solid;
+}
