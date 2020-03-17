@@ -35,6 +35,14 @@ function choose(valgt) {
     var myObj = valgt.innerHTML ;  
     console.log(myObj);
     document.getElementById('numberpad').innerHTML += valgt.innerHTML ;
+
+    if (document.getElementById('numberpad').innerText == '3812') {
+        document.getElementById("numberpad").innerText = "WIN";
+    }
+
+    if (document.getElementById('numberpad').innerText == 'WIN') {
+        return;
+    }
 }
 function reset() {
          location.reload() }
