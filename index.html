@@ -6,7 +6,7 @@
     
 <body>
 
-<div class="nummerboks"> </div>
+<div id="numberpad" class="nummerboks"> </div>
     <div>
 <button onclick="choose(this)" id="one" onmouseover="changecolor(this)" onmouseout="changeback(this)">1</button>
 <button onclick="choose(this)" id="two" onmouseover="changecolor(this)" onmouseout="changeback(this)">2</button>
@@ -31,8 +31,10 @@ function changeback(tilrosaigjen) {
 }
 function choose(valgt) {
     var myObj = valgt.innerHTML ;  
-console.log(myObj);
+    console.log(myObj);
+    document.getElementById('numberpad').innerHTML += valgt.innerHTML ;
 }
+
 
 
 </script>
