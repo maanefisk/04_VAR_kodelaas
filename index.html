@@ -8,7 +8,7 @@
 
 <div id="numberpad" class="nummerboks"> </div>
     <div>
-<button onclick="choose(this)" id="one" onmouseover="changecolor(this)" onmouseout="changeback(this)">1</button>
+<button class="knapp" onclick="choose(this)" id="one" onmouseover="changecolor(this)" onmouseout="changeback(this)">1</button>
 <button onclick="choose(this)" id="two" onmouseover="changecolor(this)" onmouseout="changeback(this)">2</button>
 <button onclick="choose(this)" id="three" onmouseover="changecolor(this)" onmouseout="changeback(this)">3</button>
 <br/>
@@ -40,9 +40,7 @@ function choose(valgt) {
         document.getElementById("numberpad").innerText = "WIN";
     }
 
-    if (document.getElementById('numberpad').innerText == 'WIN') {
-        return;
-    }
+
 }
 function reset() {
          location.reload() }
