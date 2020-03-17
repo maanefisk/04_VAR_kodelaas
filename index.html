@@ -19,6 +19,8 @@
 <button onclick="choose(this)" id="seven" onmouseover="changecolor(this)" onmouseout="changeback(this)">7</button>
 <button onclick="choose(this)" id="eight" onmouseover="changecolor(this)" onmouseout="changeback(this)">8</button>
 <button onclick="choose(this)" id="nine" onmouseover="changecolor(this)" onmouseout="changeback(this)">9</button>
+<br>
+<button onclick="reset()" id="reset" onmouseover="changecolor(this)" onmouseout="changeback(this)">Reset</button>
 
 <script>
 
@@ -34,7 +36,8 @@ function choose(valgt) {
     console.log(myObj);
     document.getElementById('numberpad').innerHTML += valgt.innerHTML ;
 }
-
+function reset() {
+         location.reload() }
 
 
 </script>
