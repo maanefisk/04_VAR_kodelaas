@@ -8,17 +8,17 @@
 
 <div id="numberpad" class="nummerboks"> </div>
     <div>
-<button class="knapp" onclick="choose(this)" id="one" onmouseover="changecolor(this)" onmouseout="changeback(this)">1</button>
-<button onclick="choose(this)" id="two" onmouseover="changecolor(this)" onmouseout="changeback(this)">2</button>
-<button onclick="choose(this)" id="three" onmouseover="changecolor(this)" onmouseout="changeback(this)">3</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">1</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">2</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">3</button>
 <br/>
-<button onclick="choose(this)" id="four" onmouseover="changecolor(this)" onmouseout="changeback(this)">4</button>
-<button onclick="choose(this)" id="five" onmouseover="changecolor(this)" onmouseout="changeback(this)">5</button>
-<button onclick="choose(this)" id="six" onmouseover="changecolor(this)" onmouseout="changeback(this)">6</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">4</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">5</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">6</button>
 <br/>
-<button onclick="choose(this)" id="seven" onmouseover="changecolor(this)" onmouseout="changeback(this)">7</button>
-<button onclick="choose(this)" id="eight" onmouseover="changecolor(this)" onmouseout="changeback(this)">8</button>
-<button onclick="choose(this)" id="nine" onmouseover="changecolor(this)" onmouseout="changeback(this)">9</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">7</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">8</button>
+<button onclick="choose(this)"  onmouseover="changecolor(this)" onmouseout="changeback(this)">9</button>
 <br>
 <button onclick="reset()" id="reset" onmouseover="changecolor(this)" onmouseout="changeback(this)">Reset</button>
 
@@ -34,7 +34,10 @@ function changeback(tilrosaigjen) {
     tilrosaigjen.style.background = "rgb(255, 104, 142)";
 }
 
+
+
 var numpad = document.getElementById('numberpad')
+
 
 function choose(valgt) {
     var myObj = valgt.innerHTML ;  
@@ -43,12 +46,13 @@ function choose(valgt) {
 
     if (numpad.innerText == '3812') {
         numpad.innerText = "WIN";
+        console.log('WIN');
     }
 
 
 }
 function reset() {
-         location.reload() }
+         location.reload(); }
 
 
 </script>
