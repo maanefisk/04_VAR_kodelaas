@@ -24,15 +24,7 @@
 
 <script>
 
-var one1
-var two2
-var three3
-var four4
-var five5
-var six6
-var seven7
-var eight8
-var nine
+
 
 function changecolor(tilorange) {
     tilorange.style.background = "rgb(230, 70, 110)";
@@ -41,13 +33,16 @@ function changecolor(tilorange) {
 function changeback(tilrosaigjen) {
     tilrosaigjen.style.background = "rgb(255, 104, 142)";
 }
+
+var numpad = document.getElementById('numberpad')
+
 function choose(valgt) {
     var myObj = valgt.innerHTML ;  
     console.log(myObj);
-    document.getElementById('numberpad').innerHTML += valgt.innerHTML ;
+    numpad.innerHTML += valgt.innerHTML ;
 
-    if (document.getElementById('numberpad').innerText == '3812') {
-        document.getElementById("numberpad").innerText = "WIN";
+    if (numpad.innerText == '3812') {
+        numpad.innerText = "WIN";
     }
 
 
